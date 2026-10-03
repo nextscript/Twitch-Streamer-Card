@@ -1,4 +1,4 @@
-<h1 align="center">Twitch Streamer Rainmeter Card</h1>
+<h1 align="center">Twitch Streamer Card</h1>
 
 <p align="center"><img src="preview.png" width="30%"></p>
 
