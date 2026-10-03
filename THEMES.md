@@ -7,7 +7,7 @@ color scheme up to a fully hand-painted background image.
 
 ## 1. How themes work
 
-A theme is a single file: `@Resources\Themes\<Number>.inc`.
+A theme is a single file: `@Resources\Themes\<Name>.inc`. The name can be a number (`12.inc`) or any text (`Ocean.inc`).
 
 `server.ini` first defines a **default value for every theme variable** (section *THEME-STANDARDWERTE*),
 and only then includes the active theme:
@@ -32,15 +32,17 @@ the avatar ring, the tile label icons and the play button on hover all follow au
 
 - Click the palette icon in the header → next theme.
 - Mouse wheel over the palette icon → next / previous theme.
-- The tooltip shows the theme name and its number, e.g. `Twitch Lila (1/35)`.
-- Switching writes `Theme=<Number>` into `server.ini` and refreshes the skin.
+- The tooltip shows the theme name and its position in the list, e.g. `Twitch Lila (1/35)`.
+- Switching writes `Theme=<Name>` (file name without `.inc`) into `server.ini` and refreshes the skin.
   You can also edit that line by hand.
 
 ### Automatic theme count
 
-`ThemeCount.lua` counts `1.inc`, `2.inc`, `3.inc`, … and **stops at the first missing number**.
-Numbers must therefore be continuous: if `1`–`35` exist and you add `37.inc`, it will not show up
-until `36.inc` exists. No other registration is needed.
+On every refresh the skin lists **all** `*.inc` files in `@Resources\Themes` (`MeasureThemeList` + `ThemeList.lua`).
+File names are free – numbers, names, gaps, all fine. The order is "natural": numbers first in numeric order
+(`2` before `10`), then names alphabetically. No other registration is needed.
+
+If a theme does not set `ThemeName`, its file name is shown instead.
 
 ---
 
@@ -49,9 +51,9 @@ until `36.inc` exists. No other registration is needed.
 1. Copy an existing theme that is close to what you want:
    - `1.inc` for a simple color theme,
    - `33.inc` / `35.inc` for a full background-image theme.
-2. Rename the copy to the next free number (currently `36.inc`).
+2. Rename the copy to any free name, e.g. `36.inc` or `Ocean.inc`.
 3. Change `ThemeName` and the colors.
-4. Put any images into `@Resources\Themes\Images\`, named after the theme number (`36.png`, `36_avatar.png`, …).
+4. Put any images into `@Resources\Themes\Images\`, ideally named after the theme file (`36.png`, `36_avatar.png`, …).
 5. Set `Theme=36` in `server.ini` (or click through to it) and middle-click the skin to refresh.
 
 Every theme file starts with the `[Variables]` section header:
@@ -92,15 +94,15 @@ All coordinates are unscaled, measured from the top-left corner of the card.
 ```
  0                                                          280
  ┌────────────────────────────────────────────────────────────┐ 0
- │  ▔▔▔▔▔▔ accent bar (AccentBarHeight) ▔▔▔▔▔▔      │
- │ ●/◯  Title (x = 14 + HeaderIndent, y = 13)  ✎   🎨   ⟳  │
+ │      ▔▔▔▔▔▔▔▔▔▔▔▔ accent bar (AccentBarHeight) ▔▔▔▔▔▔▔▔▔▔      │
+ │ ●/◯  Title (x = 14 + HeaderIndent, y = 13)     ✎   🎨   ⟳  │
  │      twitch.tv/name (y = 33)   ↕ y + HeaderIndentY         │
  │                                                            │ 58
  │  ┌──────────────────────────────────────────────────────┐  │
  │  │ LIVE                                                 │  │
  │  │                 Preview  252 × 141.75 (16:9)         │  │
  │  │                 x = 14 … 266                         │  │
- │  │ 👁 viewers                                           │  │
+ │  │ 👁 viewers                                            │  │
  │  └──────────────────────────────────────────────────────┘  │ 199.75
  │                                                            │ 211.75
  │  ┌──────────────┐   ┌──────────────┐   ┌──────────────┐    │
@@ -210,10 +212,6 @@ grey = offline) is then drawn at the bottom right of the avatar.
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `PreviewPanelExtraH` | `12` | Adds extra height to the preview panel without changing the base `PrevH` layout value. Positive values extend the preview downward. |
-| `PreviewPanelExtraW` | `0` | Adds or removes width from the preview panel without changing the base `PrevW` layout value. Positive values make the preview wider; negative values make it narrower. |
-| `PreviewPanelExtraX` | `0` | Moves the complete preview panel horizontally. Positive values move it to the right; negative values move it to the left. |
-| `PreviewPanelExtraY` | `0` | Moves the complete preview panel vertically. Positive values move it down; negative values move it up. |
 | `PreviewRadius` | `12` | Corner radius of the preview |
 | `PreviewBorderWidth` | `1` | Preview border width, `0` = none |
 | `ColorPreviewBorder` | `255,255,255,26` | Preview border color |
@@ -225,8 +223,6 @@ grey = offline) is then drawn at the bottom right of the avatar.
 | `ColorOffline` | `120,120,130,255` | Status color when offline |
 | `ColorLiveBadge` | `#ColorLive#` | LIVE badge background |
 | `ColorLiveBadgeText` | `255,255,255,255` | LIVE badge text |
-
-> `PreviewPanelExtraH`, `PreviewPanelExtraW`, `PreviewPanelExtraX` and `PreviewPanelExtraY` are set in `server.ini` under `[Variables]`. They let you resize and reposition the live `current.jpg` preview to fit custom card artwork without changing the base `PrevW` / `PrevH` layout values. The preview mask, stream image, frame, hover area and hitbox follow these adjustments.
 
 > Do not set `ColorStatus` – the skin switches it between `ColorLive` and `ColorOffline` itself.
 
@@ -458,7 +454,7 @@ Use a color picker on your painting to take colors directly from it – that kee
 
 | Problem | Cause / fix |
 |---|---|
-| New theme does not appear when clicking through | Numbers have a gap – themes are counted from `1` up to the first missing number. |
+| New theme does not appear when clicking through | The file must end in `.inc` and lie directly in `@Resources\Themes`. Refresh the skin so the list is read again. |
 | Changes are not visible | Save the file and refresh the skin (middle-click or the reload button). |
 | Theme looks like the default / colors missing | The file must start with `[Variables]`. Check the spelling of variable names – they must match exactly. |
 | Image does not show | Check the path (`#ImagesPath#36.png`) and file name. The card itself shows no error – look in the Rainmeter log (Manage → Log). |
