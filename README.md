@@ -1,6 +1,6 @@
 <h1 align="center">Twitch Streamer Card</h1>
 
-<p align="center"><img src="preview.png" width="30%"> <img src="themes1.png" width="30%"> <img src="themes2.png" width="30%"></p>
+<p align="center"><img src="themes3.png" width="30%"> <img src="themes1.png" width="30%"> <img src="themes2.png" width="30%"></p>
 
 <p align="center">
   A modern Twitch status card for Rainmeter that displays live streamer information directly on your Windows desktop.
