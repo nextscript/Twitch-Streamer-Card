@@ -92,15 +92,15 @@ All coordinates are unscaled, measured from the top-left corner of the card.
 ```
  0                                                          280
  ┌────────────────────────────────────────────────────────────┐ 0
- │      ▔▔▔▔▔▔▔▔▔▔▔▔ accent bar (AccentBarHeight) ▔▔▔▔▔▔▔▔▔▔      │
- │ ●/◯  Title (x = 14 + HeaderIndent, y = 13)     ✎   🎨   ⟳  │
+ │  ▔▔▔▔▔▔ accent bar (AccentBarHeight) ▔▔▔▔▔▔      │
+ │ ●/◯  Title (x = 14 + HeaderIndent, y = 13)  ✎   🎨   ⟳  │
  │      twitch.tv/name (y = 33)   ↕ y + HeaderIndentY         │
  │                                                            │ 58
  │  ┌──────────────────────────────────────────────────────┐  │
  │  │ LIVE                                                 │  │
  │  │                 Preview  252 × 141.75 (16:9)         │  │
  │  │                 x = 14 … 266                         │  │
- │  │ 👁 viewers                                            │  │
+ │  │ 👁 viewers                                           │  │
  │  └──────────────────────────────────────────────────────┘  │ 199.75
  │                                                            │ 211.75
  │  ┌──────────────┐   ┌──────────────┐   ┌──────────────┐    │
