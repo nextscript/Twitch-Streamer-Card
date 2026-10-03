@@ -210,6 +210,10 @@ grey = offline) is then drawn at the bottom right of the avatar.
 
 | Variable | Default | Meaning |
 |---|---|---|
+| `PreviewPanelExtraH` | `12` | Adds extra height to the preview panel without changing the base `PrevH` layout value. Positive values extend the preview downward. |
+| `PreviewPanelExtraW` | `0` | Adds or removes width from the preview panel without changing the base `PrevW` layout value. Positive values make the preview wider; negative values make it narrower. |
+| `PreviewPanelExtraX` | `0` | Moves the complete preview panel horizontally. Positive values move it to the right; negative values move it to the left. |
+| `PreviewPanelExtraY` | `0` | Moves the complete preview panel vertically. Positive values move it down; negative values move it up. |
 | `PreviewRadius` | `12` | Corner radius of the preview |
 | `PreviewBorderWidth` | `1` | Preview border width, `0` = none |
 | `ColorPreviewBorder` | `255,255,255,26` | Preview border color |
@@ -221,6 +225,8 @@ grey = offline) is then drawn at the bottom right of the avatar.
 | `ColorOffline` | `120,120,130,255` | Status color when offline |
 | `ColorLiveBadge` | `#ColorLive#` | LIVE badge background |
 | `ColorLiveBadgeText` | `255,255,255,255` | LIVE badge text |
+
+> `PreviewPanelExtraH`, `PreviewPanelExtraW`, `PreviewPanelExtraX` and `PreviewPanelExtraY` are set in `server.ini` under `[Variables]`. They let you resize and reposition the live `current.jpg` preview to fit custom card artwork without changing the base `PrevW` / `PrevH` layout values. The preview mask, stream image, frame, hover area and hitbox follow these adjustments.
 
 > Do not set `ColorStatus` – the skin switches it between `ColorLive` and `ColorOffline` itself.
 
