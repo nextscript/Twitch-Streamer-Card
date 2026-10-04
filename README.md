@@ -3,7 +3,8 @@
 <p align="center"><img src="themes3.png" width="30%"> <img src="themes1.png" width="30%"> <img src="themes2.png" width="30%"></p>
 
 <p align="center">
-  A modern Twitch status card for Rainmeter that displays live streamer information directly on your Windows desktop.
+  A customizable Twitch streamer status card for Rainmeter that displays live streamer information directly on your Windows desktop.
+  Create your own layouts and themes or use existing custom designs.
 </p>
 
 <hr>
@@ -18,13 +19,43 @@
   <li>Clickable Twitch channel link</li>
   <li>Automatic refresh</li>
   <li>Lightweight Rainmeter skin</li>
-  <li>Modern dark card design</li>
+  <li>Custom theme and layout support</li>
+  <li>Adjustable preview position and dimensions</li>
+  <li>Custom colors, images and UI elements</li>
+  <li>Multiple streamer-specific designs</li>
 </ul>
 
 <h2>📸 Preview</h2>
 
 <p>
-  The skin creates a compact desktop card showing the streamer name, live preview image, status, viewers and live time.
+  The skin creates a customizable desktop card showing the streamer name, live preview image, status, viewers and live time.
+  The examples above demonstrate different layouts and visual styles that can be created with the theme system.
+</p>
+
+<h2>🎨 Themes & Custom Designs</h2>
+
+<p>
+  Twitch Streamer Card supports fully customized themes. Each theme can use its own layout, dimensions, preview placement,
+  colors, images and individual UI elements.
+</p>
+
+<ul>
+  <li>Customize the overall card layout</li>
+  <li>Change card and preview dimensions</li>
+  <li>Move and resize the Twitch preview independently</li>
+  <li>Adjust colors, backgrounds and decorative elements</li>
+  <li>Create streamer-specific designs</li>
+  <li>Share and reuse custom themes</li>
+</ul>
+
+<p>
+  <strong>Theme documentation:</strong>
+  <a href="THEMES.md">Create your own theme → THEMES.md</a>
+</p>
+
+<p>
+  <strong>Theme examples:</strong>
+  <a href="custom%20themes">Browse the custom themes folder</a>
 </p>
 
 <h2>📦 Requirements</h2>
@@ -69,9 +100,12 @@
   <strong>Important:</strong> The streamer name must always be written in lowercase.
 </p>
 
-<h2>🎨 Customization</h2>
+<h2>⚙️ Basic Customization</h2>
 
-<p>You can edit these variables inside the skin file:</p>
+<p>
+  For simple changes, you can edit these variables directly inside the skin file.
+  For complete layout and theme customization, see <a href="THEMES.md"><code>THEMES.md</code></a>.
+</p>
 
 <table>
   <thead>
@@ -166,12 +200,6 @@ Desktop Widget</code></pre>
   <li>Better error handling</li>
   <li>Auto-hide when streamer is offline</li>
 </ul>
-
-<h2>📄 License</h2>
-
-<p>
-  This project is released under the MIT License.
-</p>
 
 <h2>🙏 Credits</h2>
 
