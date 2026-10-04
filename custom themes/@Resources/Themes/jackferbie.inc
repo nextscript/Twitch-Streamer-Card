@@ -27,7 +27,7 @@ HeaderIndent=50
 HeaderIndentY=-5
 ImgAvatar=#ThemesPath#Images\jackferbie_avatar.png
 AvatarSize=45
-AvatarX=-3.4
+AvatarX=-8
 AvatarRingWidth=0
 ColorAvatarRing=0,0,0,0
 
