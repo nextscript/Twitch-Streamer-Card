@@ -8,21 +8,21 @@ BorderWidth=0
 AccentBarHeight=0
 
 ; --- Colors (automatically sampled from the image) ---
-ColorBgTop=50,28,36,255
-ColorBgBottom=212,175,112,255
-ColorAccent=222,175,104,255
-ColorAccent2=215,157,71,255
+ColorBgTop=50,34,38,255
+ColorBgBottom=57,42,45,255
+ColorAccent=164,119,80,255
+ColorAccent2=137,99,67,255
 ColorLive=215,15,25,255
 
 ; --- Header (avatar + ring are part of the image, only the status dot here) ---
 FontTitle=Segoe UI Bold
 TitleSize=16
-ColorTitle=231,197,146,255
-ColorTitle2=217,164,83,255
+ColorTitle=205,176,151,255
+ColorTitle2=190,153,121,255
 TitleEffect=Shadow
-ColorSubtitle=222,175,104,255
-ColorIcon=222,175,104,255
-ColorIconHover=236,208,167,255
+ColorSubtitle=190,153,121,255
+ColorIcon=176,132,93,255
+ColorIconHover=201,171,144,255
 HeaderIndent=50
 HeaderIndentY=-8
 ImgAvatar=#ThemesPath#Images\himechiivt_avatar.png
@@ -46,8 +46,8 @@ ColorLabel=0,0,0,0
 ColorLabelIcon=0,0,0,0
 FontValue=Segoe UI Bold
 ValueSize=13
-ColorValue=113,77,25,255
-ColorValue2=133,92,29,255
+ColorValue=213,189,168,255
+ColorValue2=198,166,138,255
 ValueEffect=Shadow
 TileValueShift1=-2
 TileValueShift2=16
