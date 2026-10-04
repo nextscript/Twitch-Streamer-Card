@@ -8,26 +8,26 @@ BorderWidth=0
 AccentBarHeight=0
 
 ; --- Colors (automatically sampled from the image) ---
-ColorBgTop=37,26,32,255
-ColorBgBottom=66,40,48,255
-ColorAccent=183,127,86,255
-ColorAccent2=160,107,68,255
+ColorBgTop=28,18,32,255
+ColorBgBottom=54,36,50,255
+ColorAccent=191,148,87,255
+ColorAccent2=172,128,65,255
 ColorLive=215,15,25,255
 
 ; --- Header (avatar + ring are part of the image, only the status dot here) ---
 FontTitle=Segoe UI Bold
 TitleSize=16
-ColorTitle=201,159,129,255
-ColorTitle2=189,138,101,255
+ColorTitle=205,172,124,255
+ColorTitle2=183,136,70,255
 TitleEffect=Shadow
-ColorSubtitle=189,138,100,255
-ColorIcon=183,127,86,255
-ColorIconHover=206,168,140,255
-HeaderIndent=50
-HeaderIndentY=-5
+ColorSubtitle=191,148,87,255
+ColorIcon=191,148,87,255
+ColorIconHover=212,183,142,255
+HeaderIndent=75
+HeaderIndentY=-8
 ImgAvatar=#ThemesPath#Images\myun_avatar.png
 AvatarSize=45
-AvatarX=-3.4
+AvatarX=3.2
 AvatarRingWidth=0
 ColorAvatarRing=0,0,0,0
 
@@ -46,8 +46,8 @@ ColorLabel=0,0,0,0
 ColorLabelIcon=0,0,0,0
 FontValue=Segoe UI Bold
 ValueSize=13
-ColorValue=213,181,158,255
-ColorValue2=200,157,126,255
+ColorValue=205,172,124,255
+ColorValue2=183,136,70,255
 ValueEffect=Shadow
-TileValueShift1=-4
+TileValueShift1=-2
 TileValueShift2=16
