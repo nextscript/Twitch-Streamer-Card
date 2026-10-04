@@ -8,21 +8,21 @@ BorderWidth=0
 AccentBarHeight=0
 
 ; --- Colors (automatically sampled from the image) ---
-ColorBgTop=34,24,32,255
-ColorBgBottom=53,38,46,255
-ColorAccent=187,151,96,255
-ColorAccent2=170,131,73,255
+ColorBgTop=48,38,42,255
+ColorBgBottom=53,42,47,255
+ColorAccent=111,126,80,255
+ColorAccent2=89,101,64,255
 ColorLive=215,15,25,255
 
 ; --- Header (avatar + ring are part of the image, only the status dot here) ---
 FontTitle=Segoe UI Bold
 TitleSize=16
-ColorTitle=202,174,132,255
-ColorTitle2=181,141,82,255
+ColorTitle=171,185,144,255
+ColorTitle2=150,166,116,255
 TitleEffect=Shadow
-ColorSubtitle=187,151,96,255
-ColorIcon=187,151,96,255
-ColorIconHover=210,186,150,255
+ColorSubtitle=150,167,116,255
+ColorIcon=133,151,96,255
+ColorIconHover=169,183,141,255
 HeaderIndent=50
 HeaderIndentY=-8
 ImgAvatar=#ThemesPath#Images\puschelvisu_avatar.png
@@ -46,8 +46,8 @@ ColorLabel=0,0,0,0
 ColorLabelIcon=0,0,0,0
 FontValue=Segoe UI Bold
 ValueSize=13
-ColorValue=80,62,35,255
-ColorValue2=98,76,42,255
+ColorValue=20,20,20,255
+ColorValue2=1,1,1,255
 ValueEffect=Shadow
 TileValueShift1=-2
 TileValueShift2=16
