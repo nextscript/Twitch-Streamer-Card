@@ -8,23 +8,23 @@ BorderWidth=0
 AccentBarHeight=0
 
 ; --- Colors (automatically sampled from the image) ---
-ColorBgTop=250,250,250,255
-ColorBgBottom=248,247,247,255
-ColorAccent=198,160,95,255
-ColorAccent2=186,142,66,255
+ColorBgTop=37,21,33,255
+ColorBgBottom=36,21,32,255
+ColorAccent=145,102,62,255
+ColorAccent2=116,82,50,255
 ColorLive=215,15,25,255
 
 ; --- Header (avatar + ring are part of the image, only the status dot here) ---
 FontTitle=Segoe UI Bold
 TitleSize=16
-ColorTitle=103,78,37,255
-ColorTitle2=125,96,45,255
+ColorTitle=198,158,121,255
+ColorTitle2=186,137,92,255
 TitleEffect=Shadow
-ColorSubtitle=122,93,43,255
-ColorIcon=133,102,47,255
-ColorIconHover=76,59,27,255
+ColorSubtitle=186,138,93,255
+ColorIcon=170,120,73,255
+ColorIconHover=198,159,122,255
 HeaderIndent=50
-HeaderIndentY=-10
+HeaderIndentY=-8
 ImgAvatar=#ThemesPath#Images\wolfiesandy_avatar.png
 AvatarSize=45
 AvatarX=-3.4
@@ -46,8 +46,8 @@ ColorLabel=0,0,0,0
 ColorLabelIcon=0,0,0,0
 FontValue=Segoe UI Bold
 ValueSize=13
-ColorValue=107,81,38,255
-ColorValue2=125,96,45,255
+ColorValue=200,161,125,255
+ColorValue2=187,140,96,255
 ValueEffect=Shadow
 TileValueShift1=-2
 TileValueShift2=16
